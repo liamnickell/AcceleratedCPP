@@ -13,6 +13,7 @@ int main() {
     
     // Exercise 2-1 (or input 0 for both padding amounts when prompted)
     // const int pad = 0;
+    // const int sidePad = 0;
     
     // Exercise 2-3
     cout << "Please enter your desired row padding amount: ";
