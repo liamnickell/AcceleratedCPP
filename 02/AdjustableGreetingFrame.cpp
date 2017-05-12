@@ -2,8 +2,8 @@
 #include <iostream>
 #include <string>
 
-using std::cout;        using std::endl;    
-using std::cin;         using std::string;
+using std::cout;            using std::endl;    
+using std::cin;             using std::string;
 
 int main() {
     cout << "Please enter your name: ";
@@ -11,22 +11,29 @@ int main() {
     string name;
     cin >> name;
     
-    // Exercise 2-1 (or input 0 for both padding amounts when prompted)
-    // const int pad = 0;
-    // const int sidePad = 0;
-    
-    // Exercise 2-3
+    // Exercise 2-2 and 2-3
     cout << "Please enter your desired row padding amount: ";
 
     int temp;
     cin >> temp;
     const int pad = temp;
 
-    // Exercise 2-2
+    if(pad < 0) {
+        cout << "You must enter a value greater than or equal to zero. "
+                "Please try again." << endl;;
+        return -1;
+    }
+
     cout << "Please enter your desired column padding amount: ";
 
     cin >> temp;
     const int sidePad = temp;
+
+    if(sidePad < 0) {
+        cout << "You must enter a value greater than or equal to zero. "
+                "Please try again." << endl;
+        return -1;
+    }
 
     const string sidePadSpaces(sidePad, ' ');
     const string greeting = sidePadSpaces + "Hello, " + name + "!" + sidePadSpaces;
