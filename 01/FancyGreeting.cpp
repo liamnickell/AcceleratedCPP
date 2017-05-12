@@ -1,21 +1,12 @@
-// Exercise 1-0
+// Exercise 1-0 (Fancy Greeting)
 #include <iostream>
 #include <string>
 
 int main() {
-    // First code example
     std::cout << "Please enter your first name: ";
-    std::string name;
     std::cin >> name;
 
-    std::cout << "Hello, " + name + "!" << std::endl;
-
-    // Second code example
-    std::cout << "Please enter your first name: ";
-    std::string newName;
-    std::cin >> newName;
-
-    const std::string greeting = "Hello, " + newName + "!";
+    const std::string greeting = "Hello, " + name + "!";
 
     std::string spaces(greeting.size(), ' ');
     std::string second = "* " + spaces + " *";
