@@ -1,4 +1,4 @@
-// Exercise 3-0
+// Exercise 3-0 (Average Calculated with Median)
 #include <algorithm>
 #include <iomanip>
 #include <ios>
