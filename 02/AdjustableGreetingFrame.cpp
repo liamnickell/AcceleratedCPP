@@ -21,7 +21,7 @@ int main() {
     if(pad < 0) {
         cout << "You must enter a value greater than or equal to zero. "
                 "Please try again." << endl;;
-        return -1;
+        return 1;
     }
 
     cout << "Please enter your desired column padding amount: ";
