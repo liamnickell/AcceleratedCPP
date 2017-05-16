@@ -8,7 +8,7 @@ using std::endl;            using std::vector;
 using std::sort;
 
 int main() {
-    cout << "Please enter a set of integers: ";
+    cout << "Please enter a set of integers, followed by end-of-file: ";
 
     vector<int> nums;
     int input;
