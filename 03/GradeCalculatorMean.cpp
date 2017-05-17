@@ -27,6 +27,7 @@ int main() {
         ++count;
     }
 
+    // Exercise 3-6
     if(count == 0) {
         cout << "You must enter your grades. Please try again." << endl;
         return 1;
