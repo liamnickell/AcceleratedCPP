@@ -39,9 +39,8 @@ int main() {
     sort(homework.begin(), homework.end());
 
     vec_sz mid = size / 2;
-    double median;
-    median = (mid % 2 == 0) ? (homework[mid] + homework[mid-1]) / 2
-                            : homework[mid];
+    double median = (mid % 2 == 0) ? (homework[mid] + homework[mid-1]) / 2
+                                   : homework[mid];
 
     streamsize prec = cout.precision();
     cout << "Your final grade is: " << setprecision(3) 
